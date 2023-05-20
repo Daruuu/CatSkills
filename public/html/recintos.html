@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.12/jsrender.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"
+            integrity="sha512-Gn0tSSjkIGAkaZQWjx3Ctl/0dVJuTmjW/f9QyB302kFjU4uTNP4HtA32U2qXs/TRlEsK5CoEqMEMs7LnzLOBsA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/navigo/8.11.1/navigo.min.js" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+<h1>Lista de Recinto </h1>
+
+<div class="container">
+  <script id="lista_recintos" type="text/x-handlebars-template">
+      <h2>Recintos actuales</h2>
+
+      <div class="card" style="width: 18rem;">
+      {{for recintos}}
+          <img src="{{:imagen}}" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">{{:nombre}}</h5>
+              <p class="card-text">{{:direccion}}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">{{:superficie}} m2</li>
+          </ul>
+          <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+          </div>
+      {{/for}}
+      </div>
+  </script>
+</div>
+</body>
+</html>

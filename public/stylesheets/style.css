@@ -2,4 +2,12 @@
 /* Utility and component-centric Design System based on Bootstrap for fast, responsive UI development */
 /* URL: https://github.com/webpixels/css */
 
-@import url(https://unpkg.com/@webpixels/css@1.0/dist/index.css);
+/*@import url(https://unpkg.com/@webpixels/css@1.0/dist/index.css);*/
+
+.carousel-img {
+    /*border-top: 30px;*/
+    max-height: 600px;
+    object-fit: contain;
+    width: 600px;
+    /*height: 600px;*/
+}
